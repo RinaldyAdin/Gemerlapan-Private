@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins|Ubuntu&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tentang Kami</title>
+  <style type="text/css">
+* { 
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body{
+   background-color: #fff9d7;
+
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.active {
+  display: block;
+}
+nav{
+  text-align: center;
+}
+.mainNav{
+  padding-top: 30px;
+  margin: 15px auto;
+  list-style: none;
+}
+.navh{
+  color: #583a0e;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  border-bottom: 2px solid #5c5c5c;
+}
+.nav{
+  color: #583a0e;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+.mainNav{
+  display: none;
+}
+.active {
+  display: block;
+  }
+span{
+  position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer; 
+    color: black;
+    font-size: 24px;
+}
+.desktop{
+  display: none;
+}
+.mobile{
+  text-align: center;
+  padding-top: 60px;
+}
+
+.logo{
+  margin-top: 22vw;
+  width: 32vw;
+}
+.imgm{
+  text-align: center;
+}
+.kotak{
+display: none;
+}
+.kotakm{
+  display: block;
+  background-color: #d67351;
+  margin: 4vw;
+  border-radius: 4vw;
+  padding-bottom: 5vw;
+}
+.isim{
+  font-family: 'Poppins';
+  font-size: 4vw;
+  color: white;
+  padding: 3vw;
+}
+.backm{
+  color: #d67351;
+  font-size: 4vw;
+  font-family: 'Poppins';
+  text-decoration: none;
+  margin-left: 35%;
+  margin-right: 35%;
+  padding: 3vw;
+  background-color: white;
+  border-radius: 4vw;
+  transition: 0.5s;
+}
+.backm:hover{
+    color: white;
+    background-color: #d67351;
+}
+.igm{
+  display: block;
+  font-family: 'Ubuntu';
+  position: absolute;
+  left: 6vw;
+  bottom: 6vw;
+  color: #404040;
+  font-weight: bold;
+}
+.ig{
+  display: none;
+
+}
+.iga{ 
+  text-decoration: none;
+  font-weight: bold;
+  color: #404040;
+  transition: 0.4s;
+}
+.iga:hover{
+  color: #5c2525;
+}
+
+
+@media screen and (min-width: 768px) {
+body{
+  background-size: 100%
+}
+nav, ul, li{
+  display: block;
+}
+.kotak{
+  display: block;
+  width: 30%;
+  position: fixed;
+  padding-bottom: 4vw;
+  background-color: #d67351;
+  margin-left: 3vw;
+  margin-top: 1vw;
+  border-radius: 0.5vw;
+}
+.isi{
+  margin-top: 13%;
+  font-family: 'Poppins';
+  text-align: justify;
+  padding-right: 4vw;
+  padding-left: 4vw;
+  font-size: 1.6vw;
+  color: white;
+}
+
+ nav{
+  text-align: center;
+}
+.mainNav{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+} 
+li{
+  padding-left: 60px;
+  padding-right: 60px; 
+}
+#bar{
+  display: none;
+}
+.desktop{
+  padding-left: 90px;
+  display: block;
+}
+.mobile{
+  display: none;
+}
+
+.nav:hover{
+  border-bottom: 2px solid #5c5c5c;
+}
+
+.logo{
+  margin-top: 7vw;
+  width: 25vw;
+  float: right;
+  margin-right: 6vw;
+}
+.back{
+float: right;
+margin-top: 5vw;
+margin-right: 3vw;
+text-decoration: none;
+color: #d67351;
+font-family: 'Poppins';
+border: solid 2px white;
+background-color: white;
+border-radius: 2vw;
+padding: 0.6vw;
+transition: 0.5s;
+}
+.back:hover{
+  background-color: #d67351;
+  color: white;
+}
+.kotakm{
+  display: none;
+}
+.ig{
+  display: block;
+  font-family: 'Ubuntu';
+  position: absolute;
+  right: 3vw;
+  bottom: 3vw;
+  color: #404040;
+  font-weight: bold;
+}
+.iga{ 
+  text-decoration: none;
+  font-weight: bold;
+  color: #404040;
+  transition: 0.4s;
+}
+.iga:hover{
+  color: #5c2525;
+}
+.igm{
+  display: none;
+}
+
+
+
+  </style>
+</head>
+
+<body>
+<nav>
+<span id="js-navbar-toggle">
+  <i class="fa fa-bars" id="bar"></i>
+</span>
+
+
+
+<ul class="mainNav" id="js-menu"> 
+  <li><a href="index.html" class="navh">HOME</a></li>
+  <li><a href="artikel.html" class="nav">ARTIKEL</a></li>
+  <li><a href="ekskul.html" class="nav">EKSKUL</a></li>
+  <li><a href="galeri.html" class="nav">GALERI</a></li>
+</ul>
+</nav>
+<div class="kotak"><p class="isi">Gemerlapan (Gelora Media Rakyat Delapan) adalah situs siswa/i SMAN 8 Jakarta yang merupakan kolaborasi antara Anggota Ekstrakurikuler Media Siswa XXXI dan Ekstrakurikuler Teksound XXXV</p> 
+<a href="index.html" class="back">&nbsp;&nbsp;&nbsp;Kembali&nbsp;&nbsp;&nbsp;</a>
+</div>
+<p class="imgm">
+<img src="profil/MESIS FIX.png" class="logo">
+<img src="profil/tx.png" class="logo"></p>
+
+<div class="kotakm"><p class="isim" align="justify">Gemerlapan (Gelora Media Rakyat Delapan) adalah situs siswa/i SMAN 8 Jakarta yang merupakan kolaborasi antara Anggota Ekstrakurikuler Media Siswa XXXI dan Ekstrakurikuler Teksound XXXV</p> <br><br>
+<a href="index.html" class="backm">&nbsp;&nbsp;&nbsp;Kembali&nbsp;&nbsp;&nbsp;</a>
+</div>
+
+<div class="ig">
+  <p>Follow us on Instagram :<br>
+<a href="https://www.instagram.com/teksound8/" class="iga">@teksound8</a><br>
+<a href="https://www.instagram.com/mediasiswa8/" class="iga">@mediasiswa8</a>
+  </p>
+</div>
+<div class="igm">
+  <p>Follow us on Instagram :<br>
+<a href="https://www.instagram.com/teksound8/" class="iga">@teksound8</a><br>
+<a href="https://www.instagram.com/mediasiswa8/" class="iga">@mediasiswa8</a>
+  </p>
+</div>
+
+ <script type="text/javascript">
+  let mainNav = document.getElementById('js-menu');
+
+let navBarToggle = document.getElementById('js-navbar-toggle');
+
+
+navBarToggle.addEventListener('click', function () {
+    
+    mainNav.classList.toggle('active');
+
+});
+ </script> 
+
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins|Ubuntu&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home</title>
+	<style type="text/css">
+* { 
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body{
+	background-image: url(imgm.png);
+	background-size: cover;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.active {
+  display: block;
+}
+nav{
+	text-align: center;
+}
+.mainNav{
+	padding-top: 30px;
+	margin: 15px auto;
+	list-style: none;
+}
+.navh{
+	color: #583a0e;
+	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	border-bottom: 2px solid #5c5c5c;
+}
+.nav{
+	color: #583a0e;
+	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+}
+.mainNav{
+	display: none;
+}
+.active {
+  display: block;
+  }
+span{
+	position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer; 
+    color: black;
+    font-size: 24px;
+}
+.desktop{
+	display: none;
+}
+.mobile{
+	text-align: left;
+	padding-top: 60px;
+}
+.halo{
+	font-size: 60px;
+	font-family: 'Ubuntu', sans-serif;
+	-webkit-text-stroke: 3px #ef4206;
+	color: white;
+	font-weight: bolder;
+}
+.pendaki{
+	font-size: 60px;
+	font-family: 'Ubuntu', sans-serif;
+	color: #ef4206;
+	font-weight: bolder;
+}
+.anak8{
+	margin-left: 26vw;
+	font-size: 3vw;
+	font-family: 'Poppins', sans-serif;
+	color: #ea5826;
+	font-weight: 500;
+}
+.kami{
+	text-decoration: none;
+	color: #1b4577;
+	font-size: 3.2vw;
+	font-family: 'Poppins', sans-serif;
+	padding: 8px;
+	border: 3px solid #ffd797;
+	border-radius: 4vw;
+	font-weight: 600;
+	transition: 0.5s;
+}
+.kami:hover{
+	text-align: center;
+	color: white;
+	background-color: #ea5826;
+}
+.hal{
+	margin-left: 10vw;
+}
+
+@media screen and (min-width: 768px) {
+body{
+	background-image: url(img.png);
+	background-size: cover;
+}
+nav, ul, li{
+	display: block;
+}
+ nav{
+	text-align: center;
+}
+.mainNav{
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}	
+li{
+	padding-left: 60px;
+	padding-right: 60px; 
+}
+#bar{
+	display: none;
+}
+.desktop{
+	padding-left: 90px;
+	display: block;
+}
+.mobile{
+	display: none;
+}
+.halo{
+	padding-top: 40px;
+	font-size: 90px;
+	font-family: 'Ubuntu', sans-serif;
+	-webkit-text-stroke: 5px #ef4206;
+	color: white;
+	font-weight: bolder;
+}
+.pendaki{
+	font-size: 90px;
+	font-family: 'Ubuntu', sans-serif;
+	color: #ef4206;
+	font-weight: bolder;
+	margin-left: 30px;
+}
+.anak8{
+	margin-left: 8vw;
+	color: #ea5826;
+	font-size: 1.3vw;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+}
+.kami{
+	text-decoration: none;
+	color: #1b4577;
+	font-size: 1vw;
+	font-family: 'Poppins', sans-serif;
+	padding: 0.6vw;
+	padding-left: 1.3vw;
+	padding-right: 1.3vw;
+	border: 3px solid #ffd797;
+	border-radius: 15px;
+	font-weight: 600;
+}
+.nav:hover{
+	border-bottom: 2px solid #5c5c5c;
+}
+
+	</style>
+</head>
+
+<body>
+<nav>
+<span id="js-navbar-toggle">
+	<i class="fa fa-bars" id="bar"></i>
+</span>
+
+<ul class="mainNav" id="js-menu">	
+	<li><a href="index.html" class="navh">HOME</a></li>
+	<li><a href="artikel.html" class="nav">ARTIKEL</a></li>
+	<li><a href="ekskul.html" class="nav">EKSKUL</a></li>
+	<li><a href="galeri.html" class="nav">GALERI</a></li>
+</ul>
+</nav>
+
+<div class="desktop"><br><br><br>
+	<img src="Asset 3.png" width="35%"> <br>
+	<p class="anak8">Gelora media rakyat delapan</p> <br><br><br><br><br><br>
+	<a href="tentangkami.html" class="kami">T E N T A N G &nbsp; K A M I</a>
+</div>
+<div class="mobile">
+	<img src="Asset 3.png" width="70%" class="hal"> <br>
+	<p class="anak8">Gelora media rakyat delapan</p> <br><br>
+	<p align="center"><a href="tentangkami.html" class="kami">T E N T A N G &nbsp; K A M I</a></p>
+</div>
+
+ <script type="text/javascript">
+ 	let mainNav = document.getElementById('js-menu');
+
+let navBarToggle = document.getElementById('js-navbar-toggle');
+
+
+navBarToggle.addEventListener('click', function () {
+    
+    mainNav.classList.toggle('active');
+
+});
+ </script> 
+
+</body>
+</html>

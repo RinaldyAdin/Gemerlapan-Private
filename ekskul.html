@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Poppins|Ubuntu&display=swap" rel="stylesheet"> 
+	<title>Ekskul</title>
+	<style type="text/css">
+
+* { 
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body{
+	background-color: #fff9d7;
+}
+.mobile{
+	display: block;
+}
+.desktop{
+	display: none;
+}
+
+	* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.active {
+  display: block;
+}
+nav{
+	text-align: center;
+}
+.mainNav{
+	padding-top: 30px;
+	margin: 15px auto;
+	list-style: none;
+}
+.navh{
+	color: #583a0e;
+	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	border-bottom: 2px solid #5c5c5c;
+}
+.nav{
+	color: #583a0e;
+	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+}
+.mainNav{
+	display: none;
+}
+.active {
+  display: block;
+  }
+span{
+	position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer; 
+    color: black;
+    font-size: 24px;
+}
+.lbg{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 30vw 30vw 30vw 30vw 30vw;
+	padding-top: 15vw;
+	grid-gap: 4vw;
+	padding-right: 5vw;
+	padding-left: 5vw;
+}
+.imgm{
+	width: 20vw;
+	margin-top: 2vw;
+}
+.logom{
+	border: solid 1vw #bdbdbd;
+	border-radius: 15px;
+	text-align: center;
+		background-color: white;
+
+}
+.logom:active{
+	border: solid 1vw #ef4206;
+}
+a{
+	text-decoration: none;
+
+}
+.namam{
+	font-size: 3.5vw;
+	font-family: 'Poppins', sans-serif;
+	color: black;
+}
+
+@media screen and (min-width: 768px) {
+nav, ul, li{
+	display: block;
+}
+ nav{
+	text-align: center;
+}
+.mainNav{
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}	
+li{
+	padding-left: 60px;
+	padding-right: 60px; 
+}
+#bar{
+	display: none;
+}
+.nav:hover{
+	border-bottom: 2px solid #5c5c5c;
+}
+.logoo{
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 20px;
+}
+.mobile{
+	display: none;
+}
+.desktop{
+	display: block;
+}
+.lambang{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 13vw 13vw 13vw;
+	padding-left: 4vw;
+	padding-right: 4vw;
+	grid-gap: 1vw 8vw;
+}
+.imgd{
+	width: 9vw;
+	margin-top: 1vw;
+}
+a{
+	text-decoration: none;
+}
+.nama{
+	font-size: 1vw;
+	font-family: 'Poppins', sans-serif;
+	color: black;
+	text-align: center;
+
+}
+.logo{
+	text-align: center;
+	border: solid 0.3vw #bdbdbd;
+	border-radius: 10px;
+	transition: 0.3s;
+	background-color: white;
+}
+.logo:hover{
+	border: solid 0.3vw #ef4206;
+}
+.u{
+	display: none;
+}
+	</style>
+</head>
+
+<body>
+<nav>
+<span id="js-navbar-toggle">
+	<i class="fa fa-bars" id="bar"></i>
+</span>
+
+<ul class="mainNav" id="js-menu">	
+	<li><a href="index.html" class="nav">HOME</a></li>
+	<li><a href="artikel.html" class="nav">ARTIKEL</a></li>
+	<li><a href="ekskul.html" class="navh">EKSKUL</a></li>
+	<li><a href="galeri.html" class="nav">GALERI</a></li>
+</ul>
+</nav>
+
+<div class="desktop">
+<div class="lambang">
+	<figure class="logo"><a href="profil/rohis/rohis.html"><img src="profil/ROHIS FIX.jpg" class="imgd"><div class="nama">Rohani Islam</div></a></figure>
+	<figure class="logo"><a href="profil/rokris/rokris.html"><img src="profil/ROKRIS FIX.jpg" class="imgd"><div class="nama">Rohani Kristen</div></a></figure>
+	<figure class="logo"><a href="profil/rokat/rokat.html"><img src="profil/ROKAT FIX.jpg" class="imgd"><div class="nama">Rohani Katolik</div></a></figure>
+	<figure class="logo"><a href="profil/siera/siera.html"><img src="profil/SIERA FIX.jpg" class="imgd"><div class="nama">Siera</div></a></figure>
+	<figure class="logo"><a href="profil/pua/pua.html"><img src="profil/PUAPALA FIX.jpg" class="imgd"><div class="nama">Puapala</div></a></figure>
+
+	<figure class="logo"><a href="profil/kemas/kemas.html"><img src="profil/KEMAS FIX.jpg" class="imgd"><div class="nama">Kemas</div></a></figure>
+	<figure class="logo"><a href="profil/mesis/mesis.html"><img src="profil/MESIS FIX.jpg" class="imgd"><div class="nama">Mesis</div></a></figure>
+	<figure class="logo"><a href="profil/kopsis/kopsis.html"><img src="profil/KOPSIS FIX.jpg" class="imgd"><div class="nama">Kopsis</div></a></figure>
+	<figure class="logo"><a href="profil/sp/sp.html"><img src="profil/SP FIX.jpg" class="imgd"><div class="nama">SP</div></a></figure>
+	<figure class="logo"><a href="profil/pmr/pmr.html"><img src="profil/PMR FIX.jpg" class="imgd"><div class="nama">PMR</div></a></figure>
+
+	<figure class="logo"><a href="profil/or/or.html"><img src="profil/OR FIX.jpg" class="imgd"><div class="nama">Olahraga</div></a></figure>
+	<figure class="logo"><a href="profil/art/art.html"><img src="profil/ART FIX.jpg" class="imgd"><div class="nama">Kesenian</div></a></figure>
+	<figure class="logo"><a href="profil/tx/tx.html"><img src="profil/tx.jpg" class="imgd"><div class="nama">Teksound</div></a></figure>
+	<figure class="logo"><a href="profil/jc/jc.html"><img src="profil/JC FIX.jpg" class="imgd"><div class="nama">Japan Club</div></a></figure>
+	<figure class="logo"><a href="profil/gen/gen.html"><img src="profil/GEN FIX.jpg" class="imgd"><div class="nama">Genesys</div></a></figure>
+</div>
+</div>
+
+<div class="mobile">
+<div class="lbg">
+	<figure class="logom"><a href="profil/rohis/rohis.html"><img src="profil/ROHIS FIX.jpg" class="imgm"><div class="namam">Rohani Islam</div></a></figure>
+	<figure class="logom"><a href="profil/rokris/rokris.html"><img src="profil/ROKRIS FIX.jpg" class="imgm"><div class="namam">Rohani Kristen</div></a></figure>
+	<figure class="logom"><a href="profil/rokat/rokat.html"><img src="profil/ROKAT FIX.jpg" class="imgm"><div class="namam">Rohani Katolik</div></a></figure>
+	<figure class="logom"><a href="profil/siera/siera.html"><img src="profil/SIERA FIX.jpg" class="imgm"><div class="namam">Siera</div></a></figure>
+	<figure class="logom"><a href="profil/pua/pua.html"><img src="profil/PUAPALA FIX.jpg" class="imgm"><div class="namam">Puapala</div></a></figure>
+
+	<figure class="logom"><a href="profil/kemas/kemas.html"><img src="profil/KEMAS FIX.jpg" class="imgm"><div class="namam">Kemas</div></a></figure>
+	<figure class="logom"><a href="profil/mesis/mesis.html"><img src="profil/MESIS FIX.jpg" class="imgm"><div class="namam">Mesis</div></a></figure>
+	<figure class="logom"><a href="profil/kopsis/kopsis.html"><img src="profil/KOPSIS FIX.jpg" class="imgm"><div class="namam">Kopsis</div></a></figure>
+	<figure class="logom"><a href="profil/sp/sp.html"><img src="profil/SP FIX.jpg" class="imgm"><div class="namam">SP</div></a></figure>
+	<figure class="logom"><a href="profil/pmr/pmr.html"><img src="profil/PMR FIX.jpg" class="imgm"><div class="namam">PMR</div></a></figure>
+
+	<figure class="logom"><a href="profil/or/or.html"><img src="profil/OR FIX.jpg" class="imgm"><div class="namam">Olahraga</div></a></figure>
+	<figure class="logom"><a href="profil/art/art.html"><img src="profil/ART FIX.jpg" class="imgm"><div class="namam">Kesenian</div></a></figure>
+	<figure class="logom"><a href="profil/tx/tx.html"><img src="profil/tx.jpg" class="imgm"><div class="namam">Teksound</div></a></figure>
+	<figure class="logom"><a href="profil/jc/jc.html"><img src="profil/JC FIX.jpg" class="imgm"><div class="namam">Japan Club</div></a></figure>
+	<figure class="logom"><a href="profil/gen/gen.html"><img src="profil/GEN FIX.jpg" class="imgm"><div class="namam">Genesys</div></a></figure>
+	<p class="u"><br><br><br></p>
+</div>	
+</div>
+
+
+ <script type="text/javascript">
+ 	let mainNav = document.getElementById('js-menu');
+
+let navBarToggle = document.getElementById('js-navbar-toggle');
+
+
+navBarToggle.addEventListener('click', function () {
+    
+    mainNav.classList.toggle('active');
+
+});
+ </script> 
+
+</body>
+</html>

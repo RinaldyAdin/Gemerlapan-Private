@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Poppins|Ubuntu&display=swap" rel="stylesheet"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Artikel</title>
+	<style type="text/css">
+
+* { 
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+	* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+	  background-color: #fff9d7;
+	background-size: 100%;
+}
+.desktop{
+	display: none;
+}
+.mobile{
+	display: block;
+}
+.active {
+  display: block;
+}
+nav{
+	text-align: center;
+}
+.mainNav{
+	padding-top: 30px;
+	margin: 15px auto;
+	list-style: none;
+}
+.navh{
+	color: #583a0e;
+	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	border-bottom: 2px solid #5c5c5c;
+}
+.nav{
+	color: #583a0e;
+	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+}
+.mainNav{
+	display: none;
+}
+.active {
+  display: block;
+  }
+span{
+	position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer; 
+    color: black;
+    font-size: 24px;
+}
+
+#more{
+	font-size: 30px;
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+	color: #42f4a4;
+	margin-top: 30px;
+	margin-bottom: 10px;
+
+}
+.isim{
+	display: grid;	
+	grid-template-columns: 1fr ;
+	grid-template-rows: 35vw 35vw 35vw;
+	width: 100%;
+	grid-gap: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 60px;
+}
+.contm{
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+		border-radius: 0.8vw;
+}
+.contmm{
+	position: absolute;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 4vw;
+	color: white;
+	margin-top: 19vw;
+	margin-left: 3vw;
+
+}
+.contmmm{
+	font-size: 7vw;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+nav, ul, li{
+	display: block;
+}
+ nav{
+	text-align: center;
+}
+.mainNav{
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}	
+li{
+	padding-left: 60px;
+	padding-right: 60px; 
+}
+#bar{
+	display: none;
+}
+.nav:hover{
+	border-bottom: 2px solid #5c5c5c;
+}
+.isi{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 17vw 17vw;
+	width: 100%;
+	grid-gap: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.desktop{
+	display: block;
+}
+.mobile{
+	display: none;
+}
+.isi>figure{
+
+}
+.cont{
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+	border: solid 5px #fff9d7;
+	border-radius: 0.8vw;
+	transition: 0.5s;
+}
+.cont:hover{
+	border: solid 5px #ea5826;
+}
+
+.cont1{
+	grid-row-start: 1;
+	grid-row-end: 3;
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+.ff{
+	position: absolute;
+	text-align: left;
+	margin-top: 2vw;
+	margin-left: 2.7vw;
+	font-family: 'Ubuntu', sans-serif;
+	color: white;
+	font-size: 2vw;
+}
+.fff{
+	font-size: 5vw;
+}
+.fg{
+	position: absolute;
+	text-align: left;
+	margin-top: 11vw;
+	margin-left: 1vw;
+	font-family: 'Ubuntu', sans-serif;
+	color: white;
+	font-size: 1.2vw
+}
+.ffg{
+	font-size: 3vw;
+}
+
+	</style>
+</head>
+
+<body>
+<nav>
+<span id="js-navbar-toggle">
+	<i class="fa fa-bars" id="bar"></i>
+</span>
+
+<ul class="mainNav" id="js-menu">	
+	<li><a href="index.html" class="nav">HOME</a></li>
+	<li><a href="artikel.html" class="navh">ARTIKEL</a></li>
+	<li><a href="ekskul.html" class="nav">EKSKUL</a></li>
+	<li><a href="galeri.html" class="nav">GALERI</a></li>
+</ul>
+</nav>
+
+<div class="desktop">
+<div class="isi" align="center">
+	<figure class="cont1"><a href="artikel/artikel/Volunteer Work/artikel.html"><div class="ff"><strong class="fff">VOLUNTEER WORK</strong> <br> by: Indira Maharani</div><img src="artikel1.jpg" class="cont"></a></figure>
+	<figure class="cont2"><a href="artikel/artikel/Kebun Raya Bogor/artikel.html"><div class="fg"><strong class="ffg">Kebun Raya Bogor</strong> <br>by: Clyta</div><img src="artikel2.jpg" class="cont"></a></figure>
+	<figure class="cont3"><a href="artikel/artikel/Gaya Hidup Organik/artikel.html"><div class="fg"><strong class="ffg">Gaya Hidup Organik..</strong> <br> by: Syifa</div><img src="artikel3.jpg" class="cont"></a></figure>
+</div>
+</div>
+
+<div class="mobile">
+<div class="isim">
+	<figure class="contm1"><div class="contmm"><strong class="contmmm">VOLUNTEER WORK</strong><br>by : Indira Maharani</div><a href="artikel/artikel/Volunteer Work/artikel.html"><img src="artikel1.jpg" class="contm"></a></figure>
+	<figure class="contm1"><div class="contmm"><strong class="contmmm">Kebun Raya Bogor</strong><br>by: Clyta</div><a href="artikel/artikel/Kebun Raya Bogor/artikel.html"><img src="artikel2.jpg" class="contm"></a></figure>
+	<figure class="contm1"><div class="contmm"><strong class="contmmm">Gaya Hidup Organik...</strong><br>by: Syifa</div><a href="artikel/artikel/Gaya Hidup Organik/artikel.html"><img src="artikel3.jpg" class="contm"></a></figure>	
+</div>	
+</div>
+
+
+	<a href="artikel/semua.html" id="more"><i class="fas fa-chevron-circle-down"></i></a>
+</div>
+
+ <script type="text/javascript">
+ 	let mainNav = document.getElementById('js-menu');
+
+let navBarToggle = document.getElementById('js-navbar-toggle');
+
+
+navBarToggle.addEventListener('click', function () {
+    
+    mainNav.classList.toggle('active');
+
+});
+ </script> 
+
+</body>
+</html>
