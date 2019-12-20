@@ -1,0 +1,23 @@
+{
+  "name": "Gemerlapan-Private",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "start": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777 --browser 'firefox'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RinaldyAdin/Gemerlapan-Private.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RinaldyAdin/Gemerlapan-Private/issues"
+  },
+  "homepage": "https://github.com/RinaldyAdin/Gemerlapan-Private#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7"
+  }
+}
