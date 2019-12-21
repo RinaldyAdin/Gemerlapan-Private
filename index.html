@@ -120,13 +120,14 @@
 		@media screen and (min-width: 768px) {
 			html {
 				background-color: #fff9d7;
+				scroll-behavior: smooth;
+				--scroll-behavior: smooth;
 			}
 
 			body {
 				background-image: url(img.png);
-				background-size: auto 100vh;
+				background-size: auto 95vh;			background-repeat: no-repeat;
 				background-position: right top;
-				background-repeat: no-repeat;
 			}
 
 			nav,
@@ -168,7 +169,7 @@
 
 			.jumbotron {
 				padding-left: 90px;
-				height: 90vh;
+				height: 85vh;
 			}
 
 			.halo {
@@ -213,10 +214,55 @@
 				border-bottom: 2px solid #5c5c5c;
 			}
 
-			.redaksi {
+			.categories {
 				min-height: 400px;
-				padding-top: 30px;
+				padding: 40px 10%;
 				background-color: #ffd797;
+				color: #583a0e;
+				font-family: "Poppins", sans-serif;
+			}
+
+			.categories h2 {
+				font-size: 3em;
+				letter-spacing: 0.1em;;
+				text-align: center;
+				margin-bottom: 20px;
+
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+
+			.categories-content {
+				display: flex;
+				justify-content: space-between;
+			}
+
+			.category  {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			.category img {
+				width: 200px;
+				height: 200px;
+				border-radius: 50%;
+			}
+
+			.category p {
+				text-align: center;
+				font-size: 40px;
+			}
+
+			.redaksi {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+
+				min-height: 400px;
+				padding: 35px;
+				background-color: #fb9c54;
 				font-family: "Poppins", sans-serif;
 				color: #583a0e;
 			}
@@ -228,20 +274,10 @@
 			}
 
 			.redaksi-content {
-				width: 90%;
+				padding: 0 40px;
 				margin: 0 auto;
-				display: grid;
-				grid-template-columns: repeat(4, 1fr);
-				grid-template-rows: repeat(2, minmax(200px, auto));
-				justify-content: space-around;
-			}
-
-			.profil:nth-child(1) {
-				grid-column: 2;
-			}
-
-			.profil:nth-child(3), .profil:nth-child(4), .profil:nth-child(5), .profil:nth-child(6) {
-				grid-row: 2;
+				display: flex;
+				justify-content: space-between;
 			}
 
 			.profil {
@@ -251,7 +287,7 @@
 
 				align-items: center;
 				text-align: center;
-				padding: 40px;
+				padding: 20px;
 			}
 
 			.profil img {
@@ -286,11 +322,11 @@
 
 			footer {
 				min-height: 200px;
-				background-color: #fb9c54;
+				background-color: #e2af81;
 				
 				display: flex;
 				justify-content: space-between;
-				padding: 25px 10%;
+				padding: 40px 10%;
 			}
 
 			.contact {
@@ -334,7 +370,33 @@
 			<br><br><br>
 			<img src="Asset 3.png" width="35%"> <br>
 			<p class="anak8">Gelora media rakyat delapan</p> <br><br><br><br><br><br>
-			<a href="tentangkami.html" class="kami">T E N T A N G &nbsp; K A M I</a>
+			<a href="#tentang-kami" class="kami">T E N T A N G &nbsp; K A M I</a>
+		</div>
+
+		<div class="categories">
+			<h2>GEMERLAPAN</h2>
+			<div class="categories-content">
+				<div class="category">
+					<img src="artikel.jpg">
+					<p>ARTIKEL</p>
+					<!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p> -->
+				</div>
+				<div class="category">
+					<img src="artikel.jpg">
+					<p>EKSKUL</p>
+					<!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p> -->
+				</div>
+				<div class="category">
+					<img src="artikel.jpg">
+					<p>GALERI</p>
+					<!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p> -->
+				</div>
+				<div class="category">
+					<img src="artikel.jpg">
+					<p>ARTWORK</p>
+					<!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p> -->
+				</div>
+			</div>
 		</div>
 
 		<div class="redaksi">
@@ -365,15 +427,10 @@
 					<p>orang</p>
 					<p>jabatan</p>
 				</div>
-				<div class="profil">
-					<img src="artikel.jpg">
-					<p>orang</p>
-					<p>jabatan</p>
-				</div>
 			</div>
 		</div>
 
-		<div class="tentang-kami">
+		<div class="tentang-kami" id="tentang-kami">
 			<p>Gemerlapan (Gelora Media Rakyat Delapan) adalah situs siswa/i SMAN 8 Jakarta yang merupakan kolaborasi antara Anggota Ekstrakurikuler Media Siswa XXXI dan Ekstrakurikuler Teksound XXXV</p>
 			<img src="profil/MESIS FIX.png">
 			<img src="profil/tx.png">
@@ -419,7 +476,8 @@
 
 		});
 	</script>
-
+	<script src="scripts/smoothscroll-polyfill.js"></script>
+	<script src="scripts/smoothscroll-anchor.js"></script>
 </body>
 
 </html>
