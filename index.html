@@ -18,17 +18,27 @@
 			margin: 0;
 		}
 
-		.active {
-			display: block;
+		html {
+			background-color: #fff9d7;
+			scroll-behavior: smooth;
+			--scroll-behavior: smooth;
+		}
+
+		body {
+			background-image: url(imgm.png);
+			background-size: 100vw auto;
+			background-repeat: no-repeat;
+			background-position: center 10vh;
 		}
 
 		nav {
 			text-align: center;
+			min-height: 8vh;
 		}
 
 		.mainNav {
-			padding-top: 30px;
-			margin: 15px auto;
+			padding-top: 50px;
+			margin: 0 auto;
 			list-style: none;
 		}
 
@@ -50,8 +60,9 @@
 			display: none;
 		}
 
-		.active {
+		.mainNav.active {
 			display: block;
+			height: 28vh;
 		}
 
 		span {
@@ -69,7 +80,14 @@
 
 		.mobile {
 			text-align: left;
-			padding-top: 60px;
+		}
+
+		.jumbotron-m {
+			height: 92vh;
+		}
+
+		.jumbotron-m.active {
+			height: 72vh;
 		}
 
 		.halo {
@@ -117,6 +135,145 @@
 			margin-left: 10vw;
 		}
 
+		.categories-m {
+			background-color: #ffd797;
+			font-family: "Poppins", sans-serif;
+			color: #583a0e;
+			padding: 50px 0 30px 0;
+
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.categories-m h2 {
+			font-size: 2.5em;
+			letter-spacing: .15em;
+			margin-bottom: 20px;
+		}
+
+		.category-m {
+			margin-bottom: 20px;
+
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.category-m p {
+			font-size: 1.5em;
+		}
+
+		.category-m img {
+			width: 50vw;
+			height: 50vw;
+			border-radius: 50%;
+			margin-bottom: 12px;
+		}
+
+
+		.redaksi-m {
+			background-color: #fb9c54;
+			font-family: "Poppins", sans-serif;
+			color: #583a0e;
+			padding: 50px 0 30px 0;
+
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.redaksi-m h2 {
+			font-size: 3em;
+			letter-spacing: .15em;
+			margin-bottom: 20px;
+		}
+
+		.redaksi-content-m {
+
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.profil-m {
+			margin-bottom: 30px;
+
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.profil-m:last-of-type {
+			margin-bottom: 20px;
+		}
+
+		.profil-m p {
+			font-size: 1.2em;
+		}
+
+		.profil-m img {
+			width: 50vw;
+			height: 50vw;
+			border-radius: 50%;
+			margin-bottom: 12px;
+		}
+
+		.tentang-kami-m {
+			font-family: "Poppins", sans-serif;
+			font-size: 1.15em;
+			padding: 40px 13vw 30px 13vw;
+
+			background-image: url(imgm.png);
+			background-size: 100vw auto;
+			background-position: center bottom;
+			background-repeat: no-repeat;
+
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.tentang-kami-m p {
+			width: 80vw;
+			margin-bottom: 4vh;
+			position: relative;
+			left: 3vw;
+		}
+
+		.tentang-kami-m img {
+			width: 75vw;
+			height: auto;
+		}
+
+		.tentang-kami-m :last-child {
+			margin-top: 2vh;
+		}
+
+		.footer-m {
+			background-color: #e2af81;
+			padding-top: 30px;
+
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.contact-m {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-bottom: 30px;
+
+			font-family: "Poppins", sans-serif;
+			color: #583a0e;
+		}
+
+		.contact-m img {
+			width: 30px;
+			margin-bottom: 5px;
+		}
+
 		@media screen and (min-width: 768px) {
 			html {
 				background-color: #fff9d7;
@@ -126,7 +283,8 @@
 
 			body {
 				background-image: url(img.png);
-				background-size: auto 95vh;			background-repeat: no-repeat;
+				background-size: auto 95vh;
+				background-repeat: no-repeat;
 				background-position: right top;
 			}
 
@@ -225,13 +383,10 @@
 
 			.categories h2 {
 				font-size: 3em;
-				letter-spacing: 0.1em;;
+				letter-spacing: 0.1em;
+				;
 				text-align: center;
 				margin-bottom: 20px;
-
-				display: flex;
-				flex-direction: column;
-				justify-content: space-between;
 			}
 
 			.categories-content {
@@ -239,7 +394,7 @@
 				justify-content: space-between;
 			}
 
-			.category  {
+			.category {
 				display: flex;
 				flex-direction: column;
 				align-items: center;
@@ -321,10 +476,10 @@
 				flex: 1;
 			}
 
-			footer {
+			.footer {
 				min-height: 200px;
 				background-color: #e2af81;
-				
+
 				display: flex;
 				justify-content: space-between;
 				padding: 40px 10%;
@@ -346,7 +501,7 @@
 				margin-bottom: 10px;
 			}
 
-			
+
 		}
 	</style>
 </head>
@@ -432,12 +587,13 @@
 		</div>
 
 		<div class="tentang-kami" id="tentang-kami">
-			<p>Gemerlapan (Gelora Media Rakyat Delapan) adalah situs siswa/i SMAN 8 Jakarta yang merupakan kolaborasi antara Anggota Ekstrakurikuler Media Siswa XXXI dan Ekstrakurikuler Teksound XXXV</p>
+			<p>Gemerlapan (Gelora Media Rakyat Delapan) adalah situs siswa/i SMAN 8 Jakarta yang merupakan kolaborasi
+				antara Anggota Ekstrakurikuler Media Siswa XXXI dan Ekstrakurikuler Teksound XXXV</p>
 			<img src="profil/MESIS FIX.png">
 			<img src="profil/tx.png">
 		</div>
 
-		<footer>
+		<footer class="footer">
 			<div class="contact">
 				<img src="line.png">
 				<div class="contact-text">
@@ -447,7 +603,8 @@
 			</div>
 			<div class="contact">
 				<img src="email.png">
-				<div class="contact-text">							<p>gemerlapanmesis@gmail.com</p>
+				<div class="contact-text">
+					<p>gemerlapanmesis@gmail.com</p>
 				</div>
 			</div>
 			<div class="contact">
@@ -459,14 +616,101 @@
 			</div>
 		</footer>
 	</div>
+
 	<div class="mobile">
-		<img src="Asset 3.png" width="70%" class="hal"> <br>
-		<p class="anak8">Gelora media rakyat delapan</p> <br><br>
-		<p align="center"><a href="tentangkami.html" class="kami">T E N T A N G &nbsp; K A M I</a></p>
+		<div class="jumbotron-m">
+			<img src="Asset 3.png" width="70%" class="hal"> <br>
+			<p class="anak8">Gelora media rakyat delapan</p> <br><br>
+			<p align="center"><a href="#tentang-kami-m" class="kami">T E N T A N G &nbsp; K A M I</a></p>
+		</div>
+
+		<div class="categories-m">
+			<h2>GEMERLAPAN</h2>
+			<div class="categories-content-m">
+				<div class="category-m">
+					<img src="artikel.jpg">
+					<p>ARTIKEL</p>
+				</div>
+				<div class="category-m">
+					<img src="artikel.jpg">
+					<p>EKSKUL</p>
+				</div>
+				<div class="category-m">
+					<img src="artikel.jpg">
+					<p>GALERI</p>
+				</div>
+				<div class="category-m">
+					<img src="artikel.jpg">
+					<p>ARTWORK</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="redaksi-m">
+			<h2>REDAKSI</h2>
+			<div class="redaksi-content-m">
+				<div class="profil-m">
+					<img src="artikel.jpg">
+					<p>orang</p>
+					<p>jabatan</p>
+				</div>
+				<div class="profil-m">
+					<img src="artikel.jpg">
+					<p>orang</p>
+					<p>jabatan</p>
+				</div>
+				<div class="profil-m">
+					<img src="artikel.jpg">
+					<p>orang</p>
+					<p>jabatan</p>
+				</div>
+				<div class="profil-m">
+					<img src="artikel.jpg">
+					<p>orang</p>
+					<p>jabatan</p>
+				</div>
+				<div class="profil-m">
+					<img src="artikel.jpg">
+					<p>orang</p>
+					<p>jabatan</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="tentang-kami-m" id="tentang-kami-m">
+			<p>Gemerlapan (Gelora Media Rakyat Delapan) adalah situs siswa/i SMAN 8 Jakarta yang merupakan kolaborasi
+				antara Anggota Ekstrakurikuler Media Siswa XXXI dan Ekstrakurikuler Teksound XXXV</p>
+			<img src="profil/MESIS FIX.png">
+			<img src="profil/tx.png">
+		</div>
+
+		<footer class="footer-m">
+			<div class="contact-m">
+				<img src="line.png">
+				<div class="contact-text-m">
+					<p>@foy2536i (media siswa)</p>
+					<p>@fij2324d (teksound)</p>
+				</div>
+			</div>
+			<div class="contact-m">
+				<img src="email.png">
+				<div class="contact-text-m">
+					<p>gemerlapanmesis@gmail.com</p>
+				</div>
+			</div>
+			<div class="contact-m">
+				<img src="insta.png">
+				<div class="contact-text-m">
+					<p>@mediasiswa8</p>
+					<p>@teksound8</p>
+				</div>
+			</div>
+		</footer>
 	</div>
 
 	<script type="text/javascript">
 		let mainNav = document.getElementById('js-menu');
+		let jumbotron = document.querySelector('.jumbotron-m')
 
 		let navBarToggle = document.getElementById('js-navbar-toggle');
 
@@ -474,6 +718,7 @@
 		navBarToggle.addEventListener('click', function () {
 
 			mainNav.classList.toggle('active');
+			jumbotron.classList.toggle('active');
 
 		});
 	</script>
